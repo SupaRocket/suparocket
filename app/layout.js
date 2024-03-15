@@ -10,6 +10,7 @@ import { RecoilRootProvider } from './_lib/context/RecoilRoot';
 // local components
 import Footer from './_navigation/footer';
 import Navbar from './_navigation/navbar';
+import ProjectInquiry from './_components/forms/projectInquiry';
 
 const APP_NAME = 'SupaRocket';
 const APP_DEFAULT_TITLE = 'SupaRocket – Catalyst for Startups';
@@ -58,6 +59,7 @@ export default async function RootLayout({ children }) {
             <Navbar />
             {children}
             <Footer />
+            <ProjectInquiry />
           </ThemeProvider>
         </RecoilRootProvider>
       </body>

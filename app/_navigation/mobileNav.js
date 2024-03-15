@@ -1,5 +1,8 @@
 'use client';
 
+// hooks
+import { useInquiryModal } from '@/app/_lib/hooks/useInquiryModal';
+
 // chakra-ui
 import {
   Link,
@@ -25,6 +28,8 @@ import Logo from '../_components/branding/logo';
 import ColorModeToggle from '../_components/interactive/colorModeToggle';
 
 export default function MobileNavbar({ routes }) {
+  const { onModalOpen } = useInquiryModal();
+
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const buttonVariant = useColorModeValue('ghost', 'solid');
@@ -64,11 +69,14 @@ export default function MobileNavbar({ routes }) {
                 />
               ))} */}
               <Box m={'2rem 0 1rem 0'} w={'100%'}>
-                <Link w={'100%'} isExternal>
-                  <Button w={'100%'} p={'0.25rem 2rem'} colorScheme={'teal'}>
-                    Start your project
-                  </Button>
-                </Link>
+                <Button
+                  w={'100%'}
+                  p={'0.25rem 2rem'}
+                  onClick={onModalOpen}
+                  colorScheme={'teal'}
+                >
+                  Start your project
+                </Button>
               </Box>
             </VStack>
           </DrawerBody>

@@ -1,5 +1,8 @@
 'use client';
 
+// hooks
+import { useInquiryModal } from '@/app/_lib/hooks/useInquiryModal';
+
 // chakra-ui
 import {
   Heading,
@@ -7,14 +10,13 @@ import {
   Flex,
   Stack,
   Button,
-  Link,
   useColorModeValue,
   Container,
 } from '@chakra-ui/react';
-import { PanelsTopLeft } from 'lucide-react';
 
 export default function HeroSection() {
-  const textColor = useColorModeValue('gray.600', 'gray.400');
+  const { onModalOpen } = useInquiryModal();
+
   const headingColor = useColorModeValue('green.500', 'green.200');
 
   return (
@@ -34,21 +36,9 @@ export default function HeroSection() {
           websites, custom web applications, and comprehensive brand packages.
         </Text>
         <Flex gap={'1rem'}>
-          <Link href='/'>
-            <Button size={'sm'} colorScheme={'green'}>
-              Start your project
-            </Button>
-          </Link>
-          <Link href={'/'} color={textColor}>
-            <Button
-              size={'sm'}
-              leftIcon={<PanelsTopLeft size={17} />}
-              colorScheme={'gray'}
-              variant={'outline'}
-            >
-              View portfolio
-            </Button>
-          </Link>
+          <Button size={'sm'} colorScheme={'green'} onClick={onModalOpen}>
+            Start your project
+          </Button>
         </Flex>
       </Stack>
     </Container>

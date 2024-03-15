@@ -8,13 +8,9 @@ import {
   Flex,
   Heading,
   Link,
-  Box,
   useColorModeValue,
   Image,
 } from '@chakra-ui/react';
-
-// local components
-import Underscore from './underscore';
 
 export default function Logo({ shouldLink = true, p = '0.3125rem 1.4375rem' }) {
   const text = 'SupaRocket';

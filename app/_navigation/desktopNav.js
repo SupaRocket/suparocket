@@ -1,9 +1,13 @@
 'use client';
 
+// hooks
+import { useInquiryModal } from '@/app/_lib/hooks/useInquiryModal';
 // chakra-ui
 import { Link, Flex, useColorModeValue, Button, Image } from '@chakra-ui/react';
 
 export default function DesktopNavbar({ routes }) {
+  const { onModalOpen } = useInquiryModal();
+
   return (
     <Flex align={'center'}>
       <Flex fontSize={'0.9rem'}>
@@ -18,7 +22,12 @@ export default function DesktopNavbar({ routes }) {
         ))} */}
       </Flex>
       <Link ml={'1rem'}>
-        <Button size={'sm'} p={'0.25rem 2rem'} colorScheme={'teal'}>
+        <Button
+          size={'sm'}
+          p={'0.25rem 2rem'}
+          colorScheme={'green'}
+          onClick={onModalOpen}
+        >
           Get Started
         </Button>
       </Link>
