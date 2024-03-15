@@ -20,6 +20,11 @@ import {
   useColorModeValue,
   Button,
   Image,
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionPanel,
+  AccordionItem,
 } from '@chakra-ui/react';
 import { Menu } from 'lucide-react';
 
@@ -37,14 +42,8 @@ export default function MobileNavbar({ routes }) {
   return (
     <>
       <Flex align={'center'} gap={'1rem'}>
-        <Link
-          p={'0.4rem 0.8rem'}
-          borderRadius={'full'}
-          href='/cart'
-          ml={'1rem'}
-        ></Link>
-        <Button variant={buttonVariant}>
-          <Menu onClick={onOpen} size={20} />
+        <Button onClick={onOpen} variant={buttonVariant}>
+          <Menu size={20} />
         </Button>
       </Flex>
       <Drawer isOpen={isOpen} placement='top' onClose={onClose}>
@@ -57,17 +56,34 @@ export default function MobileNavbar({ routes }) {
           </DrawerHeader>
           <DrawerBody minH={'50vh'} w={'100%'}>
             <VStack w={'100%'} fontSize={'0.9rem'} align={'flex-start'}>
-              {/* {routes.map((route, index) => (
-                <NavLink
-                  key={route.name}
-                  name={route.name}
-                  path={route.path}
-                  icon={route.icon}
-                  target={route.target}
-                  index={index}
-                  routesLength={routes.length}
-                />
-              ))} */}
+              {routes.map((route, index) =>
+                route.isMenu ? (
+                  <>
+                    <Heading mt={'1rem'} size={'md'}>
+                      {route.name}
+                    </Heading>
+                    {route.menuItems.map((item) => (
+                      <NavLink
+                        key={item.name}
+                        name={item.name}
+                        path={item.path}
+                        icon={item.icon}
+                        target={item.target}
+                      />
+                    ))}
+                  </>
+                ) : (
+                  <NavLink
+                    key={route.name}
+                    name={route.name}
+                    path={route.path}
+                    icon={route.icon}
+                    target={route.target}
+                    index={index}
+                    routesLength={routes.length}
+                  />
+                )
+              )}
               <Box m={'2rem 0 1rem 0'} w={'100%'}>
                 <Button
                   w={'100%'}
@@ -108,5 +124,23 @@ const NavLink = ({ name, path, icon, target, index, routesLength }) => {
         {icon && icon}
       </Flex>
     </Link>
+  );
+};
+
+const AccordionLink = ({ name, menuItems }) => {
+  return (
+    <Accordion w={'100%'} allowToggle>
+      <AccordionItem>
+        <AccordionButton>
+          <Box flex='1' textAlign='left'>
+            {name}
+          </Box>
+          <AccordionIcon />
+        </AccordionButton>
+        <AccordionPanel pb={4} w={'100%'} border={'none'}>
+          <VStack w={'100%'} fontSize={'0.9rem'} align={'flex-start'}></VStack>
+        </AccordionPanel>
+      </AccordionItem>
+    </Accordion>
   );
 };
