@@ -15,7 +15,6 @@ import {
   Highlight,
   useColorModeValue,
 } from '@chakra-ui/react';
-import Instagram from '../_components/icons/instagram';
 import Logo from '../_components/branding/logo';
 
 export default function Footer() {

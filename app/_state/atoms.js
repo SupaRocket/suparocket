@@ -6,3 +6,8 @@ export const isLoadingState = atom({
   key: 'isLoadingState',
   default: true,
 });
+
+export const isModalOpenState = atom({
+  key: 'isModalOpenState',
+  default: false,
+});
