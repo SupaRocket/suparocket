@@ -14,7 +14,6 @@ export default function ChakraLogo() {
       height='100%'
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 257 257'
-      class='css-fuaw0j'
     >
       <rect width='100%' height='100%' rx='128.5' fill={fill} />
       <path

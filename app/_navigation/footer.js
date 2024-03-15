@@ -1,8 +1,8 @@
 'use client';
 
 // hooks
-import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { useInquiryModal } from '@/app/_lib/hooks/useInquiryModal';
 
 // components
 import {
@@ -18,6 +18,8 @@ import {
 import Logo from '../_components/branding/logo';
 
 export default function Footer() {
+  const { onModalOpen } = useInquiryModal();
+
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -71,12 +73,17 @@ export default function Footer() {
               <Flex gap={'3rem'} flexDirection={{ base: 'column', md: 'row' }}>
                 <Box>
                   <Heading size={{ base: 'md' }} mb={'0.5rem'}>
-                    Explore
+                    Services
                   </Heading>
                   <Stack gap={0}>
-                    <Link href='/'>About</Link>
-                    <Link href='/'>Projects</Link>
-                    <Link href='/'>FAQs</Link>
+                    <Link href='/services/marketing-websites'>
+                      Marketing Websites
+                    </Link>
+                    <Link href='/services/web-applications'>
+                      Web Applications
+                    </Link>
+                    <Link href='/services/brand-packages'>Brand Packages</Link>
+                    <Link href='/services/ux-design'>UX Design</Link>
                   </Stack>
                 </Box>
                 <Box>
@@ -84,7 +91,7 @@ export default function Footer() {
                     Connect
                   </Heading>
                   <Stack gap={0}>
-                    <Link href='/'>Contact</Link>
+                    <Link onClick={onModalOpen}>Contact</Link>
                   </Stack>
                 </Box>
               </Flex>
