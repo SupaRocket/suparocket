@@ -1,8 +1,14 @@
 export const routes = [
   {
+    name: 'Pricing',
+    path: '/pricing',
+    order: 1,
+    isMenu: false,
+  },
+  {
     name: 'Services',
     path: '/services',
-    order: 1,
+    order: 2,
     isMenu: true,
     menuItems: [
       {
