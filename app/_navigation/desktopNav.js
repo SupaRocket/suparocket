@@ -6,9 +6,7 @@ import { useInquiryModal } from '@/app/_lib/hooks/useInquiryModal';
 import {
   Link,
   Flex,
-  useColorModeValue,
   Button,
-  Image,
   Menu,
   MenuButton,
   MenuList,
@@ -56,24 +54,21 @@ export default function DesktopNavbar({ routes }) {
 
 const NavLink = ({ name, path, target }) => {
   return (
-    <Link
-      position={'relative'}
-      m={'0 0.5rem'}
-      fontSize={'1rem'}
-      fontWeight={500}
-      textDecoration={'none'}
-      borderRadius={'0.25rem'}
-      _hover={{
-        textDecoration: 'none',
-        background: 'purple.100',
-        color: 'purple.700',
-        borderRadius: '0.35rem',
-      }}
-      target={target}
-      href={path}
-      p={'0.4rem 0.8rem'}
-    >
-      {name}
+    <Link position={'relative'} m={'0 0.5rem'} target={target} href={path}>
+      <Button
+        size={'sm'}
+        variant={'ghost'}
+        borderRadius={'0.25rem'}
+        _hover={{
+          textDecoration: 'none',
+          background: 'purple.100',
+          color: 'purple.700',
+          borderRadius: '0.35rem',
+        }}
+        p={'0.4rem 0.8rem'}
+      >
+        {name}
+      </Button>
     </Link>
   );
 };
