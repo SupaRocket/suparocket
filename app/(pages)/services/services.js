@@ -1,10 +1,14 @@
 'use client';
 
 // images
-const marketingWebsitesSrc = 'https://i.imgur.com/FDvXyOoh.jpg';
-const webApplicationsSrc = 'https://i.imgur.com/N9E1FyCh.jpg';
-const brandPackagesSrc = 'https://i.imgur.com/CQxZiUkh.jpg';
-const uxDesignSrc = 'https://i.imgur.com/1tcpqt5h.jpg';
+const marketingWebsitesSrc =
+  'https://images.unsplash.com/photo-1591826855906-74fad3654cee?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+const webApplicationsSrc =
+  'https://images.unsplash.com/photo-1524311583145-d5593bd3502a?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+const brandPackagesSrc =
+  'https://images.unsplash.com/photo-1706186101257-818a4bbfd8bb?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+const uxDesignSrc =
+  'https://images.unsplash.com/photo-1625940092250-d12a9cff3fbd?q=80&w=1604&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
 // hooks
 import { useInquiryModal } from '@/app/_lib/hooks/useInquiryModal';

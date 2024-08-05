@@ -45,7 +45,9 @@ export const metadata = {
       template: APP_TITLE_TEMPLATE,
     },
     description: APP_DESCRIPTION,
-    images: ['https://i.imgur.com/CljkHnsh.jpg'],
+    images: [
+      'https://images.unsplash.com/photo-1508247687564-2289326346a2?q=80&w=1660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    ],
   },
 };
 
