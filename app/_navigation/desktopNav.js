@@ -42,7 +42,7 @@ export default function DesktopNavbar({ routes }) {
         <Button
           size={'sm'}
           p={'0.25rem 2rem'}
-          colorScheme={'green'}
+          colorScheme={'blue'}
           onClick={onModalOpen}
         >
           Get Started

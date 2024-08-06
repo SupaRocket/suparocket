@@ -23,7 +23,7 @@ import {
 
 export default function ServicesSection() {
   const mainBg = useColorModeValue('gray.100', 'gray.700');
-  const secondaryBg = useColorModeValue('green.100', 'green.900');
+  const secondaryBg = useColorModeValue('blue.100', 'blue.900');
   const iconBg = useColorModeValue('#2F855A', '#68D391');
   const borderColor = useColorModeValue('gray.200', 'gray.600');
 

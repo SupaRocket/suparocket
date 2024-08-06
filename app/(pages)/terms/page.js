@@ -25,7 +25,7 @@ export default function Terms() {
           Introduction
         </Heading>
         <Text mb={'0.75rem'}>
-          Welcome to SupaRocket, an online art store and subscription service.
+          Welcome to Thought Co, an online art store and subscription service.
         </Text>
         <Text>
           By accessing our website and using our services, you agree to these
@@ -77,7 +77,7 @@ export default function Terms() {
         </Heading>
         <Text mb={'0.75rem'}>
           All content on this site, including artwork, images, and text, is
-          owned by SupaRocket and is protected by intellectual property laws.
+          owned by Thought Co and is protected by intellectual property laws.
         </Text>
         <Text>
           Users are granted a limited, non-exclusive right to access the content
@@ -106,7 +106,7 @@ export default function Terms() {
           warranty.
         </Text>
         <Text>
-          SupaRocket will not be liable for any indirect, incidental, or
+          Thought Co will not be liable for any indirect, incidental, or
           punitive damages arising from the use of the service.
         </Text>
       </Box>

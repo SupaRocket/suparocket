@@ -28,9 +28,9 @@ export default function ServicePage({ slug }) {
   const service = services[slug];
   const { onModalOpen } = useInquiryModal();
 
-  const color = useColorModeValue('green.500', 'green.300');
+  const color = useColorModeValue('blue.500', 'blue.300');
 
-  const mainColor = useColorModeValue('green.700', 'green.200');
+  const mainColor = useColorModeValue('blue.700', 'blue.200');
   const borderColor = useColorModeValue('gray.200', 'gray.700');
 
   return (
@@ -86,7 +86,7 @@ export default function ServicePage({ slug }) {
             {service.cta.title}
           </Heading>
           <Text mb={'1rem'}>{service.cta.description}</Text>
-          <Button size={'sm'} colorScheme={'green'} onClick={onModalOpen}>
+          <Button size={'sm'} colorScheme={'blue'} onClick={onModalOpen}>
             Start your project
           </Button>
         </Container>

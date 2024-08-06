@@ -15,7 +15,7 @@ import {
 export default function CtaSection() {
   const { onModalOpen } = useInquiryModal();
 
-  const mainColor = useColorModeValue('green.700', 'green.200');
+  const mainColor = useColorModeValue('blue.700', 'blue.200');
   const secondaryColor = useColorModeValue('gray.600', 'gray.400');
   const borderColor = useColorModeValue('gray.200', 'gray.600');
 
@@ -40,7 +40,7 @@ export default function CtaSection() {
           Launch with speed, grow with confidence
         </Highlight>
       </Heading>
-      <Button size={'sm'} colorScheme={'green'} onClick={onModalOpen}>
+      <Button size={'sm'} colorScheme={'blue'} onClick={onModalOpen}>
         Start your project
       </Button>
     </Container>

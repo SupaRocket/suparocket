@@ -10,12 +10,12 @@ import Services from './services';
 export const metadata = {
   title: 'Services',
   description:
-    'Learn SupaRocket services and how we can help you grow your business.',
+    'Learn Thought Co services and how we can help you grow your business.',
   openGraph: {
     title: 'Services',
     images: images,
     description:
-      'Learn SupaRocket services and how we can help you grow your business.',
+      'Learn Thought Co services and how we can help you grow your business.',
     locale: 'en_US',
     type: 'website',
   },

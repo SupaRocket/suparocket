@@ -10,12 +10,12 @@ import Pricing from './pricing';
 export const metadata = {
   title: 'Pricing',
   description:
-    'Learn about SupaRocket pricing and how we can help you grow your business.',
+    'Learn about Thought Co pricing and how we can help you grow your business.',
   openGraph: {
     title: 'Pricing',
     images: images,
     description:
-      'Learn about SupaRocket pricing and how we can help you grow your business.',
+      'Learn about Thought Co pricing and how we can help you grow your business.',
     locale: 'en_US',
     type: 'website',
   },

@@ -68,6 +68,7 @@ export const pricing = [
       'Share & Review Links',
       'Unlimited Revisions',
     ],
+    contractLength: '3 months',
   },
   {
     title: 'Pro',
@@ -88,6 +89,7 @@ export const pricing = [
       'Share & Review Links',
       'Unlimited Revisions',
     ],
+    contractLength: '6 months',
   },
   {
     title: 'Max',
@@ -120,5 +122,6 @@ export const pricing = [
       'High Volume Support',
       'Book a Call',
     ],
+    contractLength: '12 months',
   },
 ];

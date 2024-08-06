@@ -49,7 +49,7 @@ export default function Error({ error, reset }) {
           size={'sm'}
           onClick={() => reset()}
           mr={'1rem'}
-          colorScheme={'green'}
+          colorScheme={'blue'}
         >
           Try again
         </Button>

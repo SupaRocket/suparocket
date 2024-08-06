@@ -27,8 +27,8 @@ export default function Footer() {
   }, []);
 
   const bg = useColorModeValue('white', 'gray.800');
-  const color = useColorModeValue('green.400', 'purple.200');
-  const borderColor = useColorModeValue('green.100', 'gray.600');
+  const color = useColorModeValue('blue.400', 'purple.200');
+  const borderColor = useColorModeValue('blue.100', 'gray.600');
 
   return (
     <>
@@ -57,16 +57,15 @@ export default function Footer() {
                 <Logo p={'0.5rem 0'} shouldLink={false} />
                 <Text>
                   <Highlight
-                    query={'SupaRocket'}
+                    query={'Thought Co'}
                     styles={{
                       fontWeight: 600,
                       color: color,
                     }}
                   >
-                    SupaRocket accelerates SaaS startups&apos; journey to
-                    success by crafting bespoke marketing websites, web
-                    applications, and brand packages with precision and
-                    creativity.
+                    Thought Co accelerates startups&apos; journey to success by
+                    crafting bespoke marketing websites, web applications, and
+                    brand packages with precision and creativity.
                   </Highlight>
                 </Text>
               </Stack>
@@ -76,6 +75,7 @@ export default function Footer() {
                     Services
                   </Heading>
                   <Stack gap={0}>
+                    <Link href='/pricing'>Pricing</Link>
                     <Link href='/services/marketing-websites'>
                       Marketing Websites
                     </Link>

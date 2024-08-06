@@ -17,7 +17,7 @@ import {
 export default function HeroSection() {
   const { onModalOpen } = useInquiryModal();
 
-  const headingColor = useColorModeValue('green.500', 'green.200');
+  const headingColor = useColorModeValue('blue.500', 'blue.200');
 
   return (
     <Container
@@ -31,12 +31,12 @@ export default function HeroSection() {
           Grow with confidence
         </Heading>
         <Text mb={'1.5rem'}>
-          SupaRocket propels your SaaS startup forward with unparalleled speed
-          and scalability. Begin your venture with cutting-edge marketing
-          websites, custom web applications, and comprehensive brand packages.
+          Thought Co propels your startup forward with unparalleled speed and
+          scalability. Begin your venture with cutting-edge marketing websites,
+          custom web applications, and comprehensive brand packages.
         </Text>
         <Flex gap={'1rem'}>
-          <Button size={'sm'} colorScheme={'green'} onClick={onModalOpen}>
+          <Button size={'sm'} colorScheme={'blue'} onClick={onModalOpen}>
             Start your project
           </Button>
         </Flex>

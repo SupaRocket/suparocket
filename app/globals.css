@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light dark;
+}
+
 *,
 *:before,
 *:after {
@@ -22,7 +26,10 @@ html body {
 }
 
 ::selection {
-  background: var(--chakra-colors-blue-300);
+  background: light-dark(
+    var(--chakra-colors-green-200),
+    var(--chakra-colors-purple-600)
+  );
 }
 
 /* Scrollbar Styles */
@@ -39,6 +46,6 @@ html body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--chakra-colors-green-200);
+  background: var(--chakra-colors-blue-200);
   border-radius: 0.25rem;
 }

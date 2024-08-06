@@ -11,7 +11,7 @@ export default function ColorModeToggle() {
 
   return (
     <FormControl display='flex' alignItems='center'>
-      <Box color={colorMode === 'light' ? 'green.500' : 'gray.400'}>
+      <Box color={colorMode === 'light' ? 'blue.500' : 'gray.400'}>
         <Sun size={17} />
       </Box>
       <Switch

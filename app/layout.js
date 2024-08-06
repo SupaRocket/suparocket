@@ -12,11 +12,11 @@ import Footer from './_navigation/footer';
 import Navbar from './_navigation/navbar';
 import ProjectInquiry from './_components/forms/projectInquiry';
 
-const APP_NAME = 'SupaRocket';
-const APP_DEFAULT_TITLE = 'SupaRocket – Catalyst for Startups';
-const APP_TITLE_TEMPLATE = '%s – SupaRocket';
+const APP_NAME = 'Thought Co';
+const APP_DEFAULT_TITLE = 'Thought Co – Catalyst for Startups';
+const APP_TITLE_TEMPLATE = '%s – Thought Co';
 const APP_DESCRIPTION =
-  "SupaRocket accelerates SaaS startups' journey to success by crafting bespoke marketing websites, web applications, and brand packages with precision and creativity.";
+  "Thought Co accelerates SaaS startups' journey to success by crafting bespoke marketing websites, web applications, and brand packages with precision and creativity.";
 
 // metadata
 export const metadata = {

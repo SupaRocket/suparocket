@@ -37,7 +37,7 @@ export default function Services() {
 
   const color = useColorModeValue('purple.500', 'purple.300');
 
-  const mainColor = useColorModeValue('green.700', 'green.200');
+  const mainColor = useColorModeValue('blue.700', 'blue.200');
   const borderColor = useColorModeValue('gray.200', 'gray.700');
 
   return (
@@ -61,7 +61,7 @@ export default function Services() {
           </Heading>
 
           <Text mb={'2rem'}>
-            At SupaRocket, we specialize in catapulting SaaS startups to success
+            At Thought Co, we specialize in catapulting SaaS startups to success
             with a comprehensive suite of services designed to build, brand, and
             boost your online presence. From initial concept to final launch,
             we&aos;re here to support your journey. Explore our services to see
@@ -129,11 +129,11 @@ export default function Services() {
         </Heading>
         <Text mb={'3rem'}>
           Your startup&apos;s success starts here. Whether you&apos;re looking
-          to build, brand, or boost your digital presence, SupaRocket has the
+          to build, brand, or boost your digital presence, Thought Co has the
           expertise to help you achieve your goals. [Get in touch] with us today
           to start your project!
         </Text>
-        <Button size={'sm'} colorScheme={'green'} onClick={onModalOpen}>
+        <Button size={'sm'} colorScheme={'blue'} onClick={onModalOpen}>
           Start your project
         </Button>
       </Container>

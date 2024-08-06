@@ -1,7 +1,7 @@
 'use client';
 
 // assets
-import logoSvg from '@/app/_assets/logo.svg';
+import logo from '@/app/_assets/hand-circle.png';
 
 // chakra-ui
 import {
@@ -13,7 +13,7 @@ import {
 } from '@chakra-ui/react';
 
 export default function Logo({ shouldLink = true, p = '0.3125rem 1.4375rem' }) {
-  const text = 'SupaRocket';
+  const text = 'Thought Co';
   const color = useColorModeValue('gray.700', 'gray.300');
   return (
     <>
@@ -43,20 +43,19 @@ export const LogoContent = ({ color, text, p }) => {
   return (
     <Flex minW={'fit-content'} color={color} align={'center'} p={p}>
       <Image
-        pt={'0.25rem'}
-        mr={'0.5rem'}
-        src={logoSvg.src}
-        alt={'SupaRocket logo'}
-        height={'1.5rem'}
+        mr={'0.65rem'}
+        src={logo.src}
+        alt={'Thought Co logo'}
+        height={'2rem'}
       />
       <Heading
         color={color}
-        fontWeight={700}
+        fontWeight={600}
         whiteSpace={'nowrap'}
         lineHeight={'1.56288rem'}
         letterSpacing={'-0.02688rem'}
         minW={'fit-content'}
-        size={'md'}
+        size={'sm'}
       >
         {text}
       </Heading>

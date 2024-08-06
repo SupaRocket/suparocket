@@ -58,7 +58,7 @@ export default function MobileNavbar({ routes }) {
             <VStack w={'100%'} fontSize={'0.9rem'} align={'flex-start'}>
               {routes.map((route, index) =>
                 route.isMenu ? (
-                  <>
+                  <Box key={index}>
                     <Heading mt={'1rem'} size={'md'}>
                       {route.name}
                     </Heading>
@@ -71,7 +71,7 @@ export default function MobileNavbar({ routes }) {
                         target={item.target}
                       />
                     ))}
-                  </>
+                  </Box>
                 ) : (
                   <NavLink
                     key={route.name}

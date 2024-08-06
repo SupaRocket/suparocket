@@ -20,7 +20,7 @@ export default function Navbar() {
   const [loading, setLoading] = useState(true);
 
   const bg = useColorModeValue('white', 'gray.800');
-  const borderColor = useColorModeValue('green.200', 'gray.600');
+  const borderColor = useColorModeValue('blue.200', 'gray.600');
 
   useEffect(() => {
     setLoading(false);

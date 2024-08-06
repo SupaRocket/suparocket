@@ -50,7 +50,7 @@ export default function PricingTable({ index, price }) {
           {price.title}
         </Heading>
         {isPro && (
-          <Tag ml={'1rem'} colorScheme={'green'}>
+          <Tag ml={'1rem'} colorScheme={'blue'}>
             Most Popular
           </Tag>
         )}
@@ -68,6 +68,7 @@ export default function PricingTable({ index, price }) {
       >
         {isMax ? 'Contact us' : 'Get started'}
       </Button>
+
       <Text color={altColor} fontSize={'0.9rem'}>
         {price.cta}
       </Text>
@@ -79,6 +80,11 @@ export default function PricingTable({ index, price }) {
           </ListItem>
         ))}
       </List>
+      <Flex flexGrow={1} align={'flex-end'} color={altColor}>
+        <Text fontSize={'0.9rem'}>
+          Minimum contract length: {price.contractLength}
+        </Text>
+      </Flex>
     </VStack>
   );
 }
